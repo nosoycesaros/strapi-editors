@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_atoms_images",
+  "info": {
+    "name": "image",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "stretched": {
+      "type": "boolean"
+    }
+  }
+}

@@ -16,7 +16,8 @@
       "components": [
         "atoms.paragraph",
         "atoms.header",
-        "atoms.quote"
+        "atoms.quote",
+        "atoms.image"
       ]
     }
   }
