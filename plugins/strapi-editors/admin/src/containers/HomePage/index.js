@@ -6,7 +6,7 @@ import CollectionTable from '../CollectionTable';
 const HomePage = () => {
   const [ pages, setPages ] = useState([])
 
-  useEffect(() => { getPages }, [])
+  useEffect(() => { getPages() }, [])
 
   /**
    * Get the list of pages using getCollection
