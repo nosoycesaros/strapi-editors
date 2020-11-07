@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "strapi-editors.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/:collection",
+      "handler": "strapi-editors.get",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/:collection/:id",
+      "handler": "strapi-editors.edit",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/:collection/:id",
+      "handler": "strapi-editors.save",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

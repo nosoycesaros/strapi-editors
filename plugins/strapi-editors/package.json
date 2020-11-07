@@ -1,0 +1,33 @@
+{
+  "name": "strapi-plugin-strapi-editors",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "Strapi Editors",
+    "icon": "plug",
+    "description": "Description of strapi-editors plugin."
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Cesaros",
+    "email": "cesaros14@gmail.com",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "Cesar Zapata",
+      "email": "cesaros14@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "Andrés Osorio",
+      "email": "cesaros14@gmail.com",
+      "url": ""
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
