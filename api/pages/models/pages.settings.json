@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "atoms.paragraph",
-        "atoms.header"
+        "atoms.header",
+        "atoms.quote"
       ]
     }
   }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import BlockEditor from '../BlockEditor'
-import { Button } from '@buffetjs/core'
 import { Header } from '@buffetjs/custom'
 import { getContent, saveContent, sanitizeContent, sanitizeUpload, lets } from '../../utils'
 

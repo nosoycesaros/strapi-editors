@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_atoms_quotes",
+  "info": {
+    "name": "quote",
+    "icon": "quote-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center"
+      ]
+    }
+  }
+}
