@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import BlockEditor from '../BlockEditor'
 import { Button } from '@buffetjs/core'
+import { Header } from '@buffetjs/custom'
 import { getContent, saveContent, sanitizeContent, sanitizeUpload, lets } from '../../utils'
 
 function Edit(props) {
@@ -46,9 +47,16 @@ function Edit(props) {
 
   return (
     <section>
-      <div className='text-right'>
-        <Button color="success" onClick={save}>Save</Button>
-      </div>
+      <Header
+        actions={[{
+          label: 'Save',
+          onClick: save,
+          color: 'success',
+          type: 'submit',
+        }]}
+        title={{ label: 'Page' }}
+        content={`API ID : pages`}
+      />
       <BlockEditor
         instanceRef={instance => editorReference.current = instance}
         data={{

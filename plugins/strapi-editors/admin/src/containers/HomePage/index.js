@@ -1,10 +1,12 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react'
 import { getCollection } from '../../utils'
-import { lets } from '../../utils';
-import CollectionTable from '../CollectionTable';
+import { lets } from '../../utils'
+import CollectionTable from '../CollectionTable'
+import { Header } from '@buffetjs/custom'
+import './styles.css'
 
 const HomePage = () => {
-  const [ pages, setPages ] = useState([])
+  const [pages, setPages] = useState([])
 
   useEffect(() => { getPages() }, [])
 
@@ -19,9 +21,20 @@ const HomePage = () => {
     setPages(pagesCollection)
   })
 
+  console.log()
+
   return (
-    <div>
-      <h1>Pages</h1>
+    <div className='home-page'>
+      <Header
+        actions={[{
+          label: 'Add Page',
+          onClick: () => alert('Add button clicked'),
+          color: 'primary',
+          type: 'submit',
+        }]}
+        title={{ label: 'Pages' }}
+        content={`${pages.length} entry found`}
+      />
       <CollectionTable rows={pages} />
     </div>
   );
